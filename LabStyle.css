@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    font-family: "Unbounded", sans-serif;
+    margin: 0;
+    padding: unit;
+}
+
+
+h1{
+    font-size:36px;
+    line-height: normal;
+    margin: 20px;
+    color: #FF8000;
+    font-weight: bold;
+    
+    
+}
+
+h2{
+    font-size: 20px;
+    margin:10px;
+    color: #F28500;
+    font-weight: bold;
+
+}
+
+img{
+    width: 600px;
+    height: 600px;
+}
+
+table{
+    margin: 10px;
+    border: none;
+    border-collapse: collapse;
+    table-layout: auto; 
+    white-space: nowrap;
+}
+
+td{
+    padding: 3px 10px;
+    text-align: left;
+
+}
+
+a {
+    text-decoration: none;
+    font-family: "Unbounded", sans;
+    font-size: 18px;
+    color: black;
+}
+a:hover{
+    color: #F28500;
+}
+
+footer{
+    background-color: black;
+    color: white;
+}
