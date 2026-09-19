@@ -20,6 +20,7 @@
             font-size: 16px;
             color:#311800;
             background-image: url('backgr.jpg');
+            min-height: 100vh;
 
             display: flex;
             justify-content: center;
@@ -31,7 +32,6 @@
 
         form{
             padding: 30px;
-            margin: 200px;
             background-color: blanchedalmond;
             border-radius: 40px;
         }
@@ -55,21 +55,21 @@
     </style>
     </head>
     <body>
-        <form action="https://httpbin.org/post" method="post" enctype="multipart/form-data">
+        <form action="https://httpbin.org/post" method="post">
             <h1>Аутентификация</h1>
 
             <div>
                 <label for="log">Введите логин</label>
-                <input id="log" type="text" minlength="3" maxlength="20">
+                <input id="log" type="text" minlength="3" maxlength="20" name="login">
             </div>
 
             <div>
                 <label for="pass">Введите пароль</label>
-                <input id="pass" type="password" minlength="8" maxlength="20" >
+                <input id="pass" type="password" minlength="8" maxlength="20" name="password" >
             </div>
 
             <div>
-                <input type="checkbox" id="cb">
+                <input type="checkbox" id="cb" name="remember">
                 <label for="cb">Запомнить меня</label>
             </div>
 

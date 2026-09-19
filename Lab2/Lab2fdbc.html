@@ -26,6 +26,7 @@
                 justify-content: center;
                 align-items: center;
                 display: flex;
+                min-height: 100vh;
             }
 
             input{
@@ -71,7 +72,7 @@
 
             textarea{
                 padding: 8px;
-                border: 1px;
+                border: 1px solid;
                 border-radius: 4px;
                 font-size: 14px;
                 resize:vertical;
@@ -87,12 +88,12 @@
 
             <div class="FullName">
                 <label class="label" for="fn">ФИО</label>
-                <input id="fn" type="text">
+                <input id="fn" type="text" name="name">
             </div>
 
             <div class="email">
                 <label class="label" for="em">Ваш адрес почты:</label>
-                <input id="em" type="email" placeholder="Введите свою почту:">
+                <input id="em" type="email" placeholder="Введите свою почту:" name="email">
             </div>
 
         
@@ -112,8 +113,8 @@
             <div>
                 <label class="label" for="cml">Категория обращения</label>
                 <select name="complainType" id="cml">
-                    <option id="cml1" value="complaining" >Жалоба</option>
-                    <option id="cml2" value="suggestion">Предложение</option>
+                    <option value="complaining" >Жалоба</option>
+                    <option value="suggestion">Предложение</option>
                 </select>
             </div>
 
@@ -128,12 +129,12 @@
             </div>
 
             <div>
-                <input type="checkbox" id="cb">
+                <input type="checkbox" id="cb" name="agree">
                 <label for="cb">Даю согласие на обработку своих данных</label>
             </div>
 
             <div>
-                <button type="submit" class=>Отправить</button>
+                <button type="submit">Отправить</button>
             </div>
 
         </form>
