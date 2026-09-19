@@ -32,7 +32,6 @@ img{
 table{
     margin: 10px;
     border: none;
-    border-collapse: collapse;
     table-layout: auto; 
     white-space: nowrap;
 }
