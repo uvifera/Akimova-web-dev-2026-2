@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    
+        <title>Обратная связь</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+
+
+            }
+
+            body{
+                font-family: 'Unbounded', sans-serif;
+                font-size: 16px;
+                color:#311800;
+                background-color: rgb(253, 245, 235);
+                padding: 20px;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+            }
+
+            input{
+                font-family: 'Unbounded', sans-serif;
+                
+            }
+
+            input[type="radio"]{
+                margin: 0 6px 0 0;
+            }
+
+            h1{
+                margin-bottom: 16px;
+                font-weight: 900;
+            }
+
+            .email{
+                margin: 20px 0;
+            }
+
+            .FullName{
+                margin: 20px 0;
+            }
+
+            .label{
+                display: block;
+                margin: 10px 0 10px 0;
+                font-weight: bold;
+            }
+
+            button{
+                margin-top:20px;
+                cursor: pointer;
+                border-radius: 99px;
+                border-color: #FF8000;
+                padding: 12px 28px;
+                background: #f4b77a;
+                font-family: 'Unbounded', sans-serif;
+                font-weight: bold;
+                
+
+            }
+
+            textarea{
+                padding: 8px;
+                border: 1px;
+                border-radius: 4px;
+                font-size: 14px;
+                resize:vertical;
+                font-family: 'Unbounded', sans-serif;
+            }
+
+            
+        </style>
+    </head>
+    <body>
+        <form action="https://httpbin.org/post" method="post" enctype="multipart/form-data">
+            <h1 >Форма обратной связи</h1>
+
+            <div class="FullName">
+                <label class="label" for="fn">ФИО</label>
+                <input id="fn" type="text">
+            </div>
+
+            <div class="email">
+                <label class="label" for="em">Ваш адрес почты:</label>
+                <input id="em" type="email" placeholder="Введите свою почту:">
+            </div>
+
+        
+            <div>
+                <label class="label">Откуда Вы узнали о нас?</label>            
+
+                <input name="about" type="radio" id="fr" value="friends">
+                <label for="fr">Друзья</label>
+
+                <input name="about" type="radio" id="ad" value="advert">
+                <label for="ad">Реклама</label>
+
+                <input name="about" type="radio" id="ot" value="other">
+                <label for="ot">Другое</label>
+            </div>
+
+            <div>
+                <label class="label" for="cml">Категория обращения</label>
+                <select name="complainType" id="cml">
+                    <option id="cml1" value="complaining" >Жалоба</option>
+                    <option id="cml2" value="suggestion">Предложение</option>
+                </select>
+            </div>
+
+            <div>
+                <label class="label" for="txt">Текст сообщения</label>
+                <textarea id="txt" name="textAreaForm" rows="10"></textarea>
+            </div>
+
+            <div>
+                <label class="label" for="flIn" >Вложение</label>
+                <input type="file" id="flIn" name="file">
+            </div>
+
+            <div>
+                <input type="checkbox" id="cb">
+                <label for="cb">Даю согласие на обработку своих данных</label>
+            </div>
+
+            <div>
+                <button type="submit" class=>Отправить</button>
+            </div>
+
+        </form>
+    </body>
+</html>

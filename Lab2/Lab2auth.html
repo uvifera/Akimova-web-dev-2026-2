@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+    <meta charset="UTF-8">
+    <title>Аутентификация</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        body{
+            font-family: 'Unbounded', sans-serif;            
+            font-size: 16px;
+            color:#311800;
+            background-image: url('backgr.jpg');
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+
+        }
+
+        form{
+            padding: 30px;
+            margin: 200px;
+            background-color: blanchedalmond;
+            border-radius: 40px;
+        }
+
+        
+
+        input[type="text"]{
+            margin: 10px 0 10px 0;
+        }
+
+        button{
+                margin-top:20px;
+                cursor: pointer;
+                border-radius: 99px;
+                border-color: #fedfb0;
+                padding: 12px 28px;
+                background: #fedfb0;
+                font-family: 'Unbounded', sans-serif;
+                font-weight: bold;
+        }
+    </style>
+    </head>
+    <body>
+        <form action="https://httpbin.org/post" method="post" enctype="multipart/form-data">
+            <h1>Аутентификация</h1>
+
+            <div>
+                <label class="label" for="log">Введите логин</label>
+                <input id="log" type="text" minlength="3" maxlength="20">
+            </div>
+
+            <div>
+                <label class="label" for="pass">Введите пароль</label>
+                <input id="pass" type="password" minlength="8" maxlength="20" >
+            </div>
+
+            <div>
+                <input type="checkbox" id="cb">
+                <label for="cb">Запомнить меня</label>
+            </div>
+
+            <div>
+                <button type="submit">Войти в аккаунт</button>
+            </div>
+
+        </form>
+        
+
+    </body>
+</html>
