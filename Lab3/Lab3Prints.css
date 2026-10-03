@@ -1,0 +1,11 @@
+nav, button, .conforder{
+    display: none;
+}
+
+h3{
+    break-before: page;
+}
+
+* {
+    color: black;
+}

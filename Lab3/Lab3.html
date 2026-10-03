@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang ="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Доставка обедов</title>
+        <link rel="stylesheet" href="Lab3Css.css">
+        <link rel="stylesheet" href="Lab3Prints.css" media="print">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+            <header>
+                <h1>Food Construct</h1>
+                <nav>
+                    <ul>
+                        <li><a href="../Lab1/Lab1.html">О нас</a></li>
+                        <li><a href="#createlunch">Собрать ланч</a></li>
+                        <li><a href="#order">Сделать заказ</a></li>
+                        <li><a href="#kontacts">Контакты</a></li>
+                        <li><a href="../Lab2/Lab2auth.html"> Аутентификация</a> </li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <section>
+                    <h2>Собрать ланч</h2>
+                    <h3>Салаты</h3>                
+                    <div class="food_container">
+                        <div class="foodbl">
+                            <img src="png/cesar.jpg" alt="Салат Цезарь">
+                            <p class="price">400 p.</p>
+                            <p class="name">Салат Цезарь</p>
+                            <p class="value">300 гр</p>
+                            <button class="add">В корзину</button>
+                        </div>
+                        
+                        <div class="foodbl">
+                            <img src="png/greek.jpg" alt="Греческий салат">
+                            <p class="price">300 p.</p>
+                            <p class="name">Греческий салат</p>
+                            <p class="value">300 гр</p>
+                            <button class="add">В корзину</button>
+                        </div>
+                        
+                        <div class="foodbl">
+                            <img src="png/nisuaz.jpg" alt="Нисуаз">
+                            <p class="price">550 p.</p>
+                            <p class="name">Салат Нисуаз</p>
+                            <p class="value">300 гр</p>
+                            <button class="add">В корзину</button>
+                        </div>
+                    </div>
+
+                    <h3>Перекус</h3>                
+                    <div class="food_container">
+                        <div class="foodbl">
+                            <img src="png/avocadosnd.jpg" alt="Авокадо-тост">
+                            <p class="price">300 p.</p>
+                            <p class="name">Авокадо-тост</p>
+                            <p class="value">200 гр</p>
+                            <button class="add">В корзину</button>
+                        </div>
+                        
+                        <div class="foodbl">
+                            <img src="png/beigl.jpg" alt="Бейгл">
+                            <p class="price">250 p.</p>
+                            <p class="name">Бейгл</p>
+                            <p class="value">150 гр</p>
+                            <button class="add">В корзину</button>
+                        </div>
+                        
+                        <div class="foodbl">
+                            <img src="png/turkeysnd.jpg" alt="Сэндвич с индейкой">
+                            <p class="price">350 p.</p>
+                            <p class="name">Сэндвич с индейкой</p>
+                            <p class="value">250 гр</p>
+                            <button class="add">В корзину</button>
+                        </div>
+                    </div>
+
+                    <h3>Десерт</h3> 
+                    <div class="food_container">
+                        <div class="foodbl">
+                            <img src="png/chisecake.jpg" alt="Чизкейк">
+                            <p class="price">320 p.</p>
+                            <p class="name">Чизкейк</p>
+                            <p class="value">200 гр</p>
+                            <button class="add">В корзину</button>
+                        </div>
+                        
+                        <div class="foodbl">
+                            <img src="png/cinomonroll.jpg" alt="Булочка с корицей">
+                            <p class="price">250 p.</p>
+                            <p class="name">Булочка с корицей</p>
+                            <p class="value">150 гр</p>
+                            <button class="add">В корзину</button>
+                        </div>
+                        
+                        <div class="foodbl">
+                            <img src="png/vafel.jpg" alt="Вафля">
+                            <p class="price">120 p.</p>
+                            <p class="name">Вафля</p>
+                            <p class="value">100 гр</p>
+                            <button class="add">В корзину</button>
+                        </div>
+                    </div>
+                </section>
+            <form action="https://httpbin.org/post" method="post">
+                <section class="conforder">
+                    
+                    <div>
+                        <h2 id="order">Сделать заказ</h2>
+                        <div>
+                            <label class="label" for="fn">Ваше ФИО</label>
+                            <input id="fn" type="text" name="name">
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="nm" name="custumername">
+                            <label for="nm">Получать будет другой человек</label>
+                        </div>
+
+                        <div>
+                            <label class="label" for="fnc">ФИО получателя</label>
+                            <input id="fnc" type="text" name="namecust">
+                        </div>
+
+                        <div>
+                            <label class="label" for="em">Ваш адрес почты:</label>
+                            <input id="em" type="email" placeholder="Введите свою почту:" name="email">
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="adag" name="agreead">
+                            <label for="adag">Получать предложения о скидках и акциях</label>
+                        </div>
+
+                        <div>
+                            <label class="label" for="phnum">Ваш номер телефона:</label>
+                            <input id="phnum" type="tel" placeholder="Введите свой номер телефона:" name="phonenumber">
+                        </div>
+
+                        <div>
+                            <label class="label" for="adr">Куда доставить:</label>
+                            <input id="adr" type="text" name="adres">
+                            <p>Доставка осуществляется только территории г. Москва</p>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="adper" name="agreeper">
+                            <label for="adper">Даю согласие на обработку персональных данных</label>
+                        </div>
+
+                        <div>
+                            <label class="label">Время доставки</label>            
+
+                            <input name="time" type="radio" id="soon" value="thesoonest">
+                            <label for="soon">Как можно скорее</label>
+
+                            <input name="time" type="radio" id="chose" value="choosentime">
+                            <label for="chose">Выбрать время</label>
+                        </div>
+
+                        <div>
+                            <label for="delt">Время доставки:</label>
+                            <input id="delt" type="time" name="choosentime" min="09:00" max="21:00" step="1800">
+                            <p>Доставка осуществляется с 9:00 до 21:00</p>
+                        </div>
+
+                        <button type="submit">Оформить заказ</button>
+                    </div>
+                </section>
+            </form>
+            </main>
+            <footer>
+                <p class="footer" id="kontacts"> Звоните! +7-495-488-77-50</p>
+                <p class="footer"> Если есть жалобы или предложения свяжитесь с нами <a href="../Lab2/Lab2fdbc.html" class="whiteText">здесь!</a></p>
+            </footer>
+        
+    </body>
+</html>
