@@ -1,0 +1,15 @@
+.conforder{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 20px;
+}
+
+ .button:hover {
+   background: tomato;
+   color:rgb(255, 235, 232);
+   border-color: tomato;
+}
+
+input{
+   padding: 10px;
+}

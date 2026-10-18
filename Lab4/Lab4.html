@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang ="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Доставка обедов</title>
+        <link rel="stylesheet" href="../Lab3/Lab3Css.css">
+        <link rel="stylesheet" href="Lab4.css">       
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+            <header>
+                <h1>Food Construct</h1>
+                <nav>
+                    <ul>
+                        <li><a href="../Lab1/Lab1.html">О нас</a></li>
+                        <li><a href="#createlunch">Собрать ланч</a></li>
+                        <li><a href="#order">Сделать заказ</a></li>
+                        <li><a href="#kontacts">Контакты</a></li>
+                        <li><a href="../Lab2/Lab2auth.html"> Аутентификация</a> </li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <section>
+                    <h2>Собрать ланч</h2>
+
+                    <h3>Салаты</h3>
+                    <div class="food_container" data-category="salad"></div>
+
+                    <h3>Перекусы</h3> 
+                    <div class="food_container" data-category="sand"></div>
+
+                    <h3>Десерты</h3>
+                    <div class="food_container" data-category="dessert"></div>                
+
+                </section>
+            <form action="https://httpbin.org/post" method="post">
+                <section class="conforder">
+                    <div class="item">
+                        <h2>Корзина</h2>
+
+                        <input type="hidden" name="salad" id="saladInput">
+                        <input type="hidden" name="sand" id="sandInput">
+                        <input type="hidden" name="dessert" id="dessertInput">
+
+                        <p>Салат</p>
+                        <div id="saladOrd"></div>
+
+                        <p>Перекус</p>
+                        <div id="sandOrd"></div>
+
+                        <p>Десерт</p>
+                        <div id="dessertOrd"></div>
+
+                        <div id="sumOrd"></div>
+
+                        
+
+                    </div>
+
+                    <div class="item">
+                        <h2 id="order">Сделать заказ</h2>
+                        <div>
+                            <label class="label" for="fn">Ваше ФИО</label>
+                            <input id="fn" type="text" name="name">
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="nm" name="custumername">
+                            <label for="nm">Получать будет другой человек</label>
+                        </div>
+
+                        <div>
+                            <label class="label" for="fnc">ФИО получателя</label>
+                            <input id="fnc" type="text" name="namecust">
+                        </div>
+
+                        <div>
+                            <label class="label" for="em">Ваш адрес почты:</label>
+                            <input id="em" type="email" placeholder="Введите свою почту:" name="email">
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="adag" name="agreead">
+                            <label for="adag">Получать предложения о скидках и акциях</label>
+                        </div>
+
+                        <div>
+                            <label class="label" for="phnum">Ваш номер телефона:</label>
+                            <input id="phnum" type="tel" placeholder="Введите свой номер телефона:" name="phonenumber">
+                        </div>
+
+                        <div>
+                            <label class="label" for="adr">Куда доставить:</label>
+                            <input id="adr" type="text" name="adres">
+                            <p>Доставка осуществляется только территории г. Москва</p>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="adper" name="agreeper">
+                            <label for="adper">Даю согласие на обработку персональных данных</label>
+                        </div>
+
+                        <div>
+                            <label class="label">Время доставки</label>            
+
+                            <input name="time" type="radio" id="soon" value="thesoonest">
+                            <label for="soon">Как можно скорее</label>
+
+                            <input name="time" type="radio" id="chose" value="choosentime">
+                            <label for="chose">Выбрать время</label>
+                        </div>
+
+                        <div>
+                            <label for="delt">Время доставки:</label>
+                            <input id="delt" type="time" name="choosentime" min="09:00" max="21:00" step="1800">
+                            <p>Доставка осуществляется с 9:00 до 21:00</p>
+                        </div>
+
+                        <button type="submit">Оформить заказ</button>
+                    </div>
+                </section>
+            </form>
+            </main>
+            <footer>
+                <p class="footer" id="kontacts"> Звоните! +7-495-488-77-50</p>
+                <p class="footer"> Если есть жалобы или предложения свяжитесь с нами <a href="../Lab2/Lab2fdbc.html" class="whiteText">здесь!</a></p>
+            </footer>
+
+        <script src="MassivDish.js"></script>
+        <script src="ScriptDish.js"></script>
+        <script src="ScriptForm.js"></script>
+    </body>
+</html>
