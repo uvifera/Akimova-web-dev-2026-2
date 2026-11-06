@@ -1,0 +1,63 @@
+.ceneterH{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.optionDessert{
+    font-size: small;
+    font-style: italic;
+}
+
+.comboMas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.combo{
+    display: flex;
+    gap: 20px
+}
+
+.comboDish{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comboImg{
+    width: 50px;
+}
+
+.comboImg:hover{
+    transform: scale(1.2) translateY(-5px);     
+}
+
+.lab6-overlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+}
+
+.lab6-notification {
+    border-radius: 10px;
+    padding: 10px;
+    background: white;
+    
+    filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.lab6-notification-btn:hover {
+    background: tomato;
+    border-color: tomato;
+    color: #ffffff;
+}
+

@@ -22,8 +22,8 @@ function Basket(){
         salad: document.querySelector('#saladInput'),
         sand: document.querySelector('#sandInput'),
         dessert: document.querySelector('#dessertInput'),
-        hotmeal: document.querySelector('#hotmealOrd'),
-        drink: document.querySelector('#drinkOrd')
+        hotmeal: document.querySelector('#hotmealInput'),
+        drink: document.querySelector('#drinkInput')
 
     };
 

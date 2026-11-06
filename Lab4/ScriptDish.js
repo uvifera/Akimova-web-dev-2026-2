@@ -32,6 +32,7 @@ function putDishes(){
     const containers= document.querySelectorAll('.food_container');
 
     for (const container of containers) {
+
         const category = container.dataset.category;
 
         const filteredDishes = dishes.filter(dish => dish.category === category);
@@ -41,7 +42,10 @@ function putDishes(){
             const card = createCard(dish);
             container.append(card);
         }       
+
+        
     }
 }
+
 
 putDishes();
