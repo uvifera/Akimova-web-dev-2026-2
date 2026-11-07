@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang ="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Доставка обедов</title>
+        <link rel="stylesheet" href="../Lab3/Lab3Css.css">
+        <link rel="stylesheet" href="../Lab5/Lab5.css">       
+        <link rel="stylesheet" href="../Lab6/Lab6.css">
+        <link rel="stylesheet" href="Lab8.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <header>
+            <h1>Food Construct</h1>
+            <nav>
+                <ul>
+                    <li><a href="../Lab1/Lab1.html">О нас</a></li>
+                    <li><a href="Lab8Main.html">Собрать ланч</a></li>
+                    <li><a href="Lab8Order.html" class="active">Оформить заказ</a></li>
+                    <li><a href="#kontacts">Контакты</a></li>
+                </ul>
+            </nav>
+        </header>
+            <main>
+                <section>
+                    <h2 class="ceneterH">Доступные комбо для заказа</h2>
+
+                    <div class="comboMas">
+                        <div class="combo">
+                            <div class="comboDish">
+                                <img src="icons/free-icon-salad-135637.png" alt="салат" class="comboImg">
+                                <p>Салат</p>
+                            </div>
+
+                            <div class="comboDish">
+                                <img src="icons/free-icon-pasta-135769.png" alt="Горячее" class="comboImg">
+                                <p>Горячее</p>
+                            </div>
+
+                            <div class="comboDish">
+                                <img src="icons/free-icon-sandwich-135591.png" alt="Закуска" class="comboImg">
+                                <p>Закуска</p>
+                            </div>
+
+                            <div class="comboDish">
+                                <img src="icons/free-icon-coffee-135765.png" alt="Напиток" class="comboImg">
+                                <p>Напиток</p>
+                            </div>
+                        </div>
+
+                        <div class="combo">
+
+                            <div class="comboDish">
+                                <img src="icons/free-icon-pasta-135769.png" alt="Горячее" class="comboImg">
+                                <p>Горячее</p>
+                            </div>
+
+                            <div class="comboDish">
+                                <img src="icons/free-icon-sandwich-135591.png" alt="Закуска" class="comboImg">
+                                <p>Закуска</p>
+                            </div>
+
+                            <div class="comboDish">
+                                <img src="icons/free-icon-coffee-135765.png" alt="Напиток" class="comboImg">
+                                <p>Напиток</p>
+                            </div>
+                        </div>
+
+                        <div class="combo">
+                            <div class="comboDish">
+                                <img src="icons/free-icon-salad-135637.png" alt="салат" class="comboImg">
+                                <p>Салат</p>
+                            </div>
+
+                            <div class="comboDish">
+                                <img src="icons/free-icon-pasta-135769.png" alt="Горячее" class="comboImg">
+                                <p>Горячее</p>
+                            </div>
+
+                            <div class="comboDish">
+                                <img src="icons/free-icon-coffee-135765.png" alt="Напиток" class="comboImg">
+                                <p>Напиток</p>
+                            </div>
+                        </div>
+
+                        <div class="combo">
+                            <div class="comboDish">
+                                <img src="icons/free-icon-salad-135637.png" alt="салат" class="comboImg">
+                                <p>Салат</p>
+                            </div>
+
+                            <div class="comboDish">
+                                <img src="icons/free-icon-sandwich-135591.png" alt="Закуска" class="comboImg">
+                                <p>Закуска</p>
+                            </div>
+
+                            <div class="comboDish">
+                                <img src="icons/free-icon-coffee-135765.png" alt="Напиток" class="comboImg">
+                                <p>Напиток</p>
+                            </div>
+                        </div>
+
+                        <div class="combo">
+
+                            <div class="comboDish">
+                                <img src="icons/free-icon-sandwich-135591.png" alt="Закуска" class="comboImg">
+                                <p>Закуска</p>
+                            </div>
+
+                            <div class="comboDish">
+                                <img src="icons/free-icon-coffee-135765.png" alt="Напиток" class="comboImg">
+                                <p>Напиток</p>
+                            </div>
+                        </div>
+
+                        <div class="combo">
+                            <div class="comboDish">
+                                <img src="icons/free-icon-cupcake-135556.png" alt="Десерт" class="comboImg">
+                                <p>Десерт</p>
+                                <p class="optionDessert"> (Можно добавить к любому заказу)</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2 class="ceneterH">Собрать ланч</h2>
+
+                    <h3>Салаты</h3>
+
+                    <button data-kind="vegetarian" class="filter" data-category="salad">Вегетерианские</button>
+                    <button data-kind="vegan" class="filter" data-category="salad">Веганские</button>
+                    <button data-kind="meat" class="filter" data-category="salad">С продуктами животного происхождения</button>
+
+                    <div class="food_container" data-category="salad"></div>
+
+                    <h3>Горячее</h3>
+
+                    <button data-kind="vegetarian" class="filter" data-category="hotmeal">Вегетерианские</button>
+                    <button data-kind="vegan" class="filter" data-category="hotmeal">Веганские</button>
+                    <button data-kind="meat" class="filter" data-category="hotmeal">С продуктами животного происхождения</button>
+
+                    <div class="food_container" data-category="hotmeal"></div>
+
+                    <h3>Перекусы</h3> 
+
+                    <button data-kind="vegetarian" class="filter" data-category="sand">Вегетерианские</button>
+                    <button data-kind="vegan" class="filter" data-category="sand">Веганские</button>
+                    <button data-kind="meat" class="filter" data-category="sand">С продуктами животного происхождения</button>
+
+                    <div class="food_container" data-category="sand"></div>
+
+                    <h3>Десерты</h3>
+
+                    <button data-kind="vegetarian" class="filter" data-category="dessert">Вегетерианские</button>
+                    <button data-kind="vegan" class="filter" data-category="dessert">Веганские</button>
+                    <button data-kind="meat" class="filter" data-category="dessert"> С продуктами животного происхождения</button>
+
+                    <div class="food_container" data-category="dessert"></div>
+                    
+                    <h3>Напитки</h3>
+
+                    <button data-kind="lactose" class="filter" data-category="drink">Лактозосодержащие</button>
+                    <button data-kind="nolac" class="filter" data-category="drink">Безлактозные</button>
+                    
+                    <div class="food_container" data-category="drink"></div> 
+
+                </section>
+            
+                
+                <div id="checkout-panel" class="checkout-panel" hidden>
+                    <span class="checkout-total">Стоимость заказа: <strong id="checkout-sum">0</strong> руб.</span>
+                    <a href="Lab8Order.html" id="checkout-link" class="checkout-btn disabled">Перейти к оформлению</a>
+                </div>                
+            </main>
+            <footer>
+                <p class="footer" id="kontacts"> Звоните! +7-495-488-77-50</p>
+                <p class="footer"> Если есть жалобы или предложения свяжитесь с нами <a href="../Lab2/Lab2fdbc.html" class="whiteText">здесь!</a></p>
+            </footer>
+        <script src="../Lab7/Lab7.js"></script>
+        <script src="../Lab5/ScriptDish.js"></script>
+        <script src="ScriptForm.js"></script>
+        <script src="../Lab5/ScriptFilter.js"></script>
+        <script src="../Lab6/Lab6.js"></script>
+        <script src="Lab8.js"></script>
+
+    </body>
+</html>

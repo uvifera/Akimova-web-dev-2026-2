@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформить заказ - Food Construct</title>
+    <link rel="stylesheet" href="../Lab3/Lab3Css.css">
+    <link rel="stylesheet" href="../Lab5/Lab5.css">       
+    <link rel="stylesheet" href="../Lab6/Lab6.css">
+    <link rel="stylesheet" href="Lab8.css">
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Food Construct</h1>
+        <nav>
+            <ul>
+                <li><a href="../Lab1/Lab1.html">О нас</a></li>
+                <li><a href="Lab8Main.html">Собрать ланч</a></li>
+                <li><a href="Lab8Order.html" class="active">Оформить заказ</a></li>
+                <li><a href="#kontacts">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="ceneterH">Состав заказа</h2>
+        <div id="cart-container" class="cardOrder"></div>
+
+        <div id="empty-message">
+            <p class="ceneterH">Ничего не выбрано</p>
+        </div>
+
+        <h2 class="ceneterH">Оформление заказа</h2>
+
+        <section class="conforder">
+            <div class="item">
+                <h2>Корзина</h2>
+
+                <input type="hidden" name="salad"   id="saladInput">
+                <input type="hidden" name="sand"    id="sandInput">
+                <input type="hidden" name="dessert" id="dessertInput">
+                <input type="hidden" name="hotmeal" id="hotmealInput">
+                <input type="hidden" name="drink"   id="drinkInput">
+
+                <div class="orderSub">
+                    <p>Салат</p>
+                    <div id="saladOrd"></div>
+                </div>
+                <div class="orderSub">
+                    <p>Горячее</p>
+                    <div id="hotmealOrd"></div>
+                </div>
+                <div class="orderSub">
+                    <p>Закуска</p>
+                    <div id="sandOrd"></div>
+                </div>
+                <div class="orderSub">
+                    <p>Десерт</p>
+                    <div id="dessertOrd"></div>
+                </div>
+                <div class="orderSub">
+                    <p>Напиток</p>
+                    <div id="drinkOrd"></div>
+                </div>
+
+                <div id="sumOrd"></div>
+            </div>
+
+            <div class="item">
+                <form action="https://httpbin.org/post" method="post">
+                    <h2 id="order">Сделать заказ</h2>
+                        <div>
+                            <label class="label" for="fn">Ваше ФИО</label>
+                            <input id="fn" type="text" name="name">
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="nm" name="custumername">
+                            <label for="nm">Получать будет другой человек</label>
+                        </div>
+
+                        <div>
+                            <label class="label" for="fnc">ФИО получателя</label>
+                            <input id="fnc" type="text" name="namecust">
+                        </div>
+
+                        <div>
+                            <label class="label" for="em">Ваш адрес почты:</label>
+                            <input id="em" type="email" placeholder="Введите свою почту:" name="email">
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="adag" name="agreead">
+                            <label for="adag">Получать предложения о скидках и акциях</label>
+                        </div>
+
+                        <div>
+                            <label class="label" for="phnum">Ваш номер телефона:</label>
+                            <input id="phnum" type="tel" placeholder="Введите свой номер телефона:" name="phonenumber">
+                        </div>
+
+                        <div>
+                            <label class="label" for="adr">Куда доставить:</label>
+                            <input id="adr" type="text" name="adres">
+                            <p>Доставка осуществляется только территории г. Москва</p>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="adper" name="agreeper">
+                            <label for="adper">Даю согласие на обработку персональных данных</label>
+                        </div>
+
+                        <div>
+                            <label class="label">Время доставки</label>            
+
+                            <input name="time" type="radio" id="soon" value="thesoonest">
+                            <label for="soon">Как можно скорее</label>
+
+                            <input name="time" type="radio" id="chose" value="choosentime">
+                            <label for="chose">Выбрать время</label>
+                        </div>
+
+                        <div>
+                            <label for="delt">Время доставки:</label>
+                            <input id="delt" type="time" name="choosentime" min="09:00" max="21:00" step="1800">
+                            <p>Доставка осуществляется с 9:00 до 21:00</p>
+                        </div>
+                    <div>
+                        <button type="button" id="btn-reset">Сбросить</button>
+                        <button type="submit" id="btn-submit">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="footer" id="kontacts"> Звоните! +7-495-488-77-50</p>
+        <p class="footer"> Если есть жалобы или предложения свяжитесь с нами <a href="../Lab2/Lab2fdbc.html" class="whiteText">здесь!</a></p>
+    </footer>
+
+    <script src="../Lab7/Lab7.js"></script>
+    <script src="../Lab5/ScriptDish.js"></script>
+    <script src="ScriptForm.js"></script>
+    <script src="../Lab6/Lab6.js"></script>
+    <script src="Lab8.js"></script>
+    <script src="Lab8Cards.js"></script>
+
+</body>
+</html>
